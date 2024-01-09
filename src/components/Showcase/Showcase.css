@@ -1,0 +1,215 @@
+.BigShowcaseBox{
+    /* gives the flexibility to the div */
+     display: flex;
+     /* gives the flexibility direction which is row */
+     flex-direction: row;
+     /* Give the background-color black */
+    background-color: black;
+    /* gives the width 100%  */
+    width: 100%;
+    /* gives the height according to the screen */
+   height: 1024px;
+  
+    /* gives the font color white */
+    color: white;
+    /* gives equal spacing in between */
+    justify-content: space-between;
+  }
+ /* calls the classname of the box to be styled */
+  .MediumShowcaseBox{
+    /* gives the space from the left side of 85 pixels */
+    margin-left: 85px;
+    text-align: left;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+  .MediumShowcaseBox1{
+    margin-right: 85px;
+  }
+ 
+ .TitleShowcaseBox{
+   font-size: 64px;
+   font-weight: 800;
+   width: 90%;                   
+ }
+ .DescriptionShowcaseBox{
+  font-size: 20px;
+  font-weight: 300;
+  width: 80%;
+  text-align:justify ;
+}
+
+ 
+  .ImageBox{
+     display: flex;
+     flex-direction: row;
+     gap: 69px;
+     margin-bottom: 40px;
+  }
+ 
+  .Image1{
+   width: 300px;
+   height: 524px;
+   background-color: red;
+  overflow: hidden;
+  }
+  .Image1::before{
+    content: '';
+    position: absolute;
+    top: 118%;
+    left: 47.6%;
+    width: 300px;
+    height: 524px;
+    background-color:rgba(0, 0, 0, 0.5)
+  }
+ 
+.Image1:hover .ImageText1::after{
+
+
+}
+  .Image1png{
+  height: 100%;
+  width: auto;
+  display: block;
+  }
+ 
+  .Image2{
+    width: 300px;
+   height: 524px;
+   background-color: green;
+  overflow: hidden;
+  }
+
+.Image2::before{
+    content: '';
+    position: absolute;
+    top: 118%;
+    right: 5.9%;
+    width: 300px;
+    height: 524px;
+ background-color:rgba(0, 0, 0, 0.5)}
+
+  .Image2png{
+display: block;
+height: 100%;
+width: auto; 
+}
+
+  .Image3{
+   width: 669px;
+   height: 355px;
+   display: flex;
+   overflow: hidden;
+   margin: 0 auto;
+  }
+
+
+  .Image3::before{
+    content: '';
+    position: absolute;
+    top: 190%;
+    right: 6%;
+    width: 669px;
+    height: 355px;
+    background-color: rgba(0, 0, 0, 0.5);}
+.Image3png{
+width:100% ;
+height: 100%;
+object-fit: cover;
+}
+.ImageText3{
+position: absolute;
+top: 210%;
+right: 26%;
+font-size: 30px;
+z-index: 20;
+transition: opacity 0.3s ease-in-out; 
+}
+.ImageTextSame3{
+  position: absolute;
+  top: 210%;
+  right: 21%;
+  font-size: 30px;
+  z-index: 20;
+  transition: opacity 0.3s ease-in-out; 
+  opacity: 0;
+}
+.Image3:hover .ImageTextSame3{
+  opacity: 1;
+}
+.Image2:hover .ImageText2{
+opacity: 0;
+}
+
+.ImageText1{
+  position: absolute;
+  top: 150%;
+  right: 35%;
+  font-size: 30px;
+  z-index: 20;
+transition: opacity 0.3s ease-in-out;  
+}
+.ImageTextChange1{
+  position: absolute;
+  top: 150%;
+  right: 35%;
+  font-size: 30px;
+  z-index: 20;
+transition: opacity 0.3s ease-in-out;
+opacity: 0;  
+}
+.Image1:hover .ImageTextChange1{
+opacity: 1;
+}
+.Image1:hover .ImageText1{
+opacity: 0;
+}
+  .ImageText2{
+    position: absolute;
+    top: 150%;
+    right: 13%;
+    font-size: 30px;
+    z-index: 20;
+  transition: opacity 0.3s ease-in-out;  
+  }
+  .ImageTextDifferent2{
+    position: absolute;
+    top: 150%;
+    right: 10%;
+    font-size: 30px;
+    z-index: 20;
+  transition: opacity 0.3s ease-in-out;  
+opacity: 0;  
+}
+  
+  .Image2:hover .ImageTextDifferent2{
+  opacity: 1;
+  }
+.Image3:hover .ImageText3{
+opacity: 0;
+}
+.ButtonShowcase {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-align: center;
+  width: 85%;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.ButtonShowcase:hover {
+  background-color: white;
+  color: black;
+}
+
+.ButtonShowcase:active {
+  transform: scale(0.95);
+}

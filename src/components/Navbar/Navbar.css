@@ -1,0 +1,48 @@
+.OneBigBox{
+    background-color:black;
+    height: 120px;
+    display: flex;
+flex-direction: row;
+align-items: center ;
+padding: 10px;
+gap: 50px;
+justify-content: space-between;
+}
+
+.leftbox{ color: white;
+
+    height:80px;
+width: 80px;
+align-items: center;
+text-align:center ;
+font-size: 26px;
+padding-left: 10px;
+padding-right: 10px;
+font-weight: 700;
+justify-content: center;
+display: flex;
+margin-left: 85px;
+
+} 
+
+.rightbox{ color: white;
+
+    height:80px;
+width: 600px;
+align-items: center;
+text-align:center ;
+font-size: 20px;
+padding-left: 10px;
+padding-right: 10px;
+font-weight: 700;
+justify-content: center;
+display: flex;
+margin-right: 85px;     
+justify-content: space-evenly;       
+
+}
+
+
+.logo {
+width: 80px;    
+}

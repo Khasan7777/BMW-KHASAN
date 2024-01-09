@@ -1,0 +1,89 @@
+.DisplayMain{
+background-color: red;
+width: 100%;
+height: 1200px;
+background-image:url('/Users/gulmirakhojikulova/Desktop/bmw/public/assets/BmwDark.png');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+display: flex;
+flex-direction: column;
+text-align: center;
+transition: 0.5s ease-in-out;
+}
+.Bmwvideo{
+padding-top: 50px;
+padding-bottom: 50px;
+}
+.Bmwvideo::before{
+content: '';
+position: absolute;
+width: 288px;
+height: 510px;
+background: rgba(0, 0, 0, 0.5);
+}
+.DisplayMain:hover{
+background-image:url('/Users/gulmirakhojikulova/Desktop/bmw/public/assets/BmwLight.png');
+}
+.Beauty{
+font-size: 64px;
+font-weight: 700;
+color:white;
+}
+.Beast{
+font-size: 32px;
+font-weight: 700;
+color: white;
+letter-spacing: 21px;
+}
+.Speed{
+width: 80%;
+align-self: center;
+padding-top: 50px;  
+}
+.Numbers{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.Values{
+font-size: 20px;
+font-weight: 700;
+color: white;
+}
+.Divider{
+width: 3px;
+height: 62px;
+color: #282828;
+display: flex;
+}
+.Numbers{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.Values{
+font-size: 20px;
+font-weight: 700;
+color: white;
+}
+.Divider{
+width: 3px;
+height: 62px;
+color:#282828;
+display: contents;
+}
+/* new */
+.TitleNumbers{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding-top: 30px;
+}
+/* new */
+.ValuesT{
+font-size: 20px;
+font-weight: 700;
+color: white;
+margin-left: 80px;
+}
